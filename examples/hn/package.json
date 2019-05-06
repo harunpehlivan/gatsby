@@ -13,13 +13,19 @@
     "gatsby-plugin-offline": "latest",
     "gatsby-source-hacker-news": "latest",
     "lodash": "^4.16.4",
-    "slash": "^1.0.0"
+    "slash": "^1.0.0",
+    "snyk": "^1.161.1"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build"
-  }
+    "build": "gatsby build",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
