@@ -15,13 +15,19 @@
     "react-typography": "^0.15.0",
     "slash": "^1.0.0",
     "typography": "^0.15.8",
-    "typography-breakpoint-constants": "^0.14.0"
+    "typography-breakpoint-constants": "^0.14.0",
+    "snyk": "^1.161.1"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build"
-  }
+    "build": "gatsby build",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
