@@ -5,20 +5,21 @@
   "version": "1.0.0-beta.6",
   "author": "Sebastien Fichot <fichot.sebastien@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.45",
+    "gatsby": "^2.0.0",
     "gatsby-image": "^1.0.4",
     "gatsby-link": "^1.6.21",
     "gatsby-plugin-glamor": "^1.6.7",
     "gatsby-plugin-react-helmet": "^2.0.1",
-    "gatsby-plugin-sharp": "^1.6.7",
+    "gatsby-plugin-sharp": "^2.0.31",
     "gatsby-plugin-styled-components": "^2.0.2",
     "gatsby-plugin-typography": "^1.7.9",
-    "gatsby-source-wordpress": "^2.0.0",
+    "gatsby-source-wordpress": "^3.0.0",
     "gatsby-transformer-sharp": "^1.6.5",
     "lodash": "^4.16.4",
     "react-helmet": "^5.2.0",
     "react-icons": "^2.2.5",
-    "typography-theme-wordpress-2013": "^0.15.10"
+    "typography-theme-wordpress-2013": "^0.15.10",
+    "snyk": "^1.161.1"
   },
   "keywords": [
     "gatsby"
@@ -32,9 +33,12 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "start": "gatsby serve",
-    "predeploy": "gatsby build --prefix-paths"
+    "predeploy": "gatsby build --prefix-paths",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "eslint": "^4.1.1"
-  }
+  },
+  "snyk": true
 }
