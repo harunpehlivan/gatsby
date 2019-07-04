@@ -29,7 +29,8 @@
     "request": "^2.79.0",
     "slug": "^0.9.1",
     "typeface-space-mono": "^0.0.22",
-    "typography": "^0.15.0"
+    "typography": "^0.15.0",
+    "snyk": "^1.189.0"
   },
   "keywords": [
     "gatsby"
@@ -42,6 +43,9 @@
     "develop": "gatsby develop",
     "dev": "gatsby develop",
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
-  }
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
