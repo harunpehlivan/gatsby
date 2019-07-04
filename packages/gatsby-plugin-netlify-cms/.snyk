@@ -1,0 +1,30 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - netlify-cms > react-sortable-hoc > lodash:
+        patched: '2019-07-04T06:51:00.784Z'
+    - html-webpack-plugin > lodash:
+        patched: '2019-07-04T06:51:00.784Z'
+    - netlify-cms > redux > lodash:
+        patched: '2019-07-04T06:51:00.784Z'
+    - netlify-cms > react-dnd > lodash:
+        patched: '2019-07-04T06:51:00.784Z'
+    - netlify-cms > react-dnd-html5-backend > lodash:
+        patched: '2019-07-04T06:51:00.784Z'
+    - netlify-cms > react-redux > lodash:
+        patched: '2019-07-04T06:51:00.784Z'
+    - netlify-cms > lodash:
+        patched: '2019-07-04T06:51:00.784Z'
+    - netlify-cms > slate > lodash:
+        patched: '2019-07-04T06:51:00.784Z'
+    - netlify-cms > react-hot-loader > lodash:
+        patched: '2019-07-04T06:51:00.784Z'
+    - netlify-cms > react-dnd > dnd-core > lodash:
+        patched: '2019-07-04T06:51:00.784Z'
+    - netlify-cms > redux-notifications > react-redux > lodash:
+        patched: '2019-07-04T06:51:00.784Z'
+    - netlify-cms > react-dnd > dnd-core > redux > lodash:
+        patched: '2019-07-04T06:51:00.784Z'
