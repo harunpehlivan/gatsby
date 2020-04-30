@@ -117,7 +117,8 @@
     "webpack-md5-hash": "0.0.5",
     "webpack-stats-plugin": "^0.1.4",
     "webpack-validator": "^2.2.7",
-    "yaml-loader": "^0.4.0"
+    "yaml-loader": "^0.4.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -153,8 +154,10 @@
     "build:rawfiles": "copyfiles -u 1 src/internal-plugins/**/raw_* dist",
     "build:src": "babel src --out-dir dist --source-maps --ignore gatsby-cli.js,raw_*,__tests__",
     "clean-test-bundles": "find test/ -type f -name bundle.js* -exec rm -rf {} +",
-    "prepublish": "cross-env NODE_ENV=production npm run build",
+    "prepublish": "npm run snyk-protect && cross-env NODE_ENV=production npm run build",
     "test-coverage": "node_modules/.bin/nyc --reporter=lcov --reporter=text npm test",
-    "watch": "rimraf dist && mkdir dist && npm run build:internal-plugins && npm run build:rawfiles && npm run build:src -- --watch"
-  }
+    "watch": "rimraf dist && mkdir dist && npm run build:internal-plugins && npm run build:rawfiles && npm run build:src -- --watch",
+    "snyk-protect": "snyk protect"
+  },
+  "snyk": true
 }
