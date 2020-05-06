@@ -6,12 +6,16 @@
   "dependencies": {
     "gatsby": "latest",
     "gatsby-source-filesystem": "latest",
-    "gatsby-transformer-hjson": "latest"
+    "gatsby-transformer-hjson": "latest",
+    "snyk": "^1.319.0"
   },
   "license": "MIT",
   "main": "n/a",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build"
-  }
+    "build": "gatsby build",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
