@@ -11,7 +11,9 @@
     "clean:public": "rm -rf public & mkdir public",
     "clean": "npm run clean:public",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "personal",
@@ -36,6 +38,8 @@
     "moment": "^2.14.1",
     "normalize.css": "^7.0.0",
     "prop-types": "^15.5.8",
-    "react-helmet": "^5.2.0"
-  }
+    "react-helmet": "^5.2.0",
+    "snyk": "^1.319.0"
+  },
+  "snyk": true
 }
