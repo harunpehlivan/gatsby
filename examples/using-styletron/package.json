@@ -18,7 +18,8 @@
     "styletron-react-core": "^1",
     "styletron-standard": "^1",
     "typography": "^0.15.8",
-    "typography-breakpoint-constants": "^0.14.0"
+    "typography-breakpoint-constants": "^0.14.0",
+    "snyk": "^1.319.0"
   },
   "keywords": [
     "gatsby"
@@ -27,6 +28,9 @@
   "main": "n/a",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build"
-  }
+    "build": "gatsby build",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
