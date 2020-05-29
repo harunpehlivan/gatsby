@@ -8,12 +8,16 @@
     "gatsby-link": "latest",
     "gatsby-plugin-google-analytics": "latest",
     "gatsby-source-filesystem": "latest",
-    "gatsby-transformer-csv": "latest"
+    "gatsby-transformer-csv": "latest",
+    "snyk": "^1.332.0"
   },
   "license": "MIT",
   "main": "n/a",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build"
-  }
+    "build": "gatsby build",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
