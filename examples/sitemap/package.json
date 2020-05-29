@@ -8,13 +8,19 @@
     "gatsby": "latest",
     "gatsby-source-filesystem": "latest",
     "gatsby-transformer-remark": "latest",
-    "gatsby-plugin-sitemap": "latest"
+    "gatsby-plugin-sitemap": "latest",
+    "snyk": "^1.332.1"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "main": "index.js",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build"
-  }
+    "build": "gatsby build",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
