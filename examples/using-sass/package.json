@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Daniel Farrell <daniel.farrell@mobelux.com>",
   "license": "MIT",
@@ -17,6 +19,8 @@
     "gatsby-plugin-sass": "latest",
     "react-typography": "^0.15.10",
     "tachyons-sass": "^4.7.1",
-    "typography": "^0.15.10"
-  }
+    "typography": "^0.15.10",
+    "snyk": "^1.332.1"
+  },
+  "snyk": true
 }
