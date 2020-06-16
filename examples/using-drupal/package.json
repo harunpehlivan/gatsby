@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.76",
+    "gatsby": "^2.1.1",
     "gatsby-image": "^1.0.16",
     "gatsby-link": "^1.6.23",
     "gatsby-plugin-glamor": "^1.6.8",
@@ -23,7 +23,8 @@
     "typeface-josefin-slab": "^0.0.43",
     "typeface-rochester": "^0.0.43",
     "typography": "^0.15.8",
-    "typography-breakpoint-constants": "^0.14.0"
+    "typography-breakpoint-constants": "^0.14.0",
+    "snyk": "^1.342.2"
   },
   "keywords": [
     "gatsby"
@@ -32,6 +33,9 @@
   "main": "n/a",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build"
-  }
+    "build": "gatsby build",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
