@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "flat": "^2.0.1",
+    "flat": "^5.0.2",
     "gatsby": "latest",
     "gatsby-link": "latest",
     "gatsby-plugin-google-analytics": "latest",
