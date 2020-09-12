@@ -38,7 +38,7 @@
     "gatsby-transformer-remark": "^1.7.36",
     "gatsby-transformer-sharp": "^1.6.22",
     "gatsby-transformer-yaml": "^1.5.16",
-    "graphql-request": "^1.5.1",
+    "graphql-request": "^2.0.0",
     "gray-percentage": "^2.0.0",
     "hex2rgba": "^0.0.1",
     "jsonp": "^0.2.1",
