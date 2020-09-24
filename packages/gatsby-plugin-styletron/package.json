@@ -9,7 +9,7 @@
   "dependencies": {
     "babel-runtime": "^6.26.0",
     "styletron-engine-atomic": "^1",
-    "styletron-react": "^4",
+    "styletron-react": "^5.0.0",
     "styletron-react-core": "^1",
     "styletron-standard": "^1"
   },
