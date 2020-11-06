@@ -8,7 +8,7 @@
     "gatsby-link": "^1.6.28",
     "gatsby-plugin-react-helmet": "^2.0.1",
     "gatsby-source-mongodb": "^1.5.11",
-    "gatsby-transformer-remark": "^1.7.21",
+    "gatsby-transformer-remark": "^2.1.8",
     "react-helmet": "^5.2.0"
   },
   "license": "MIT",
