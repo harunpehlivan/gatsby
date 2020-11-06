@@ -17,7 +17,7 @@
     "gatsby-plugin-typography": "^1.7.10",
     "gatsby-remark-prismjs": "^1.2.8",
     "gatsby-source-filesystem": "^1.5.5",
-    "gatsby-transformer-remark": "^1.7.17",
+    "gatsby-transformer-remark": "^2.1.8",
     "lodash": "^4.17.4",
     "prop-types": "^15.6.0",
     "react-emotion": "^8.0.2-8",
