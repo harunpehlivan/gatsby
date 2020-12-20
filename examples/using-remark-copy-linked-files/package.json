@@ -4,7 +4,7 @@
   "description": "Gatsby example site on gatsby-remark-copy-linked-files",
   "author": "Florian Kissling <sechskilo@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.108",
+    "gatsby": "^2.1.1",
     "gatsby-link": "latest",
     "gatsby-plugin-google-analytics": "^1.0.12",
     "gatsby-plugin-offline": "^1.0.10",
@@ -25,7 +25,8 @@
     "react-responsive-grid": "^0.3.3",
     "typeface-merriweather": "^0.0.35",
     "typeface-montserrat": "^0.0.37",
-    "typography-theme-wordpress-2016": "^0.15.1"
+    "typography-theme-wordpress-2016": "^0.15.1",
+    "snyk": "^1.437.2"
   },
   "devDependencies": {
     "eslint": "^4.9.0",
@@ -43,6 +44,9 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
-  }
+    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
