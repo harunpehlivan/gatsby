@@ -4,12 +4,14 @@
   "main": "n/a",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "emotion": "^8.0.2-8",
     "emotion-server": "^8.0.2-8",
-    "gatsby": "^1.0.11",
+    "gatsby": "^2.1.1",
     "gatsby-link": "^1.0.9",
     "gatsby-plugin-emotion": "latest",
     "gatsby-plugin-google-analytics": "^1.0.1",
@@ -22,8 +24,10 @@
     "prop-types": "^15.6.0",
     "react-emotion": "^8.0.2-8",
     "typography": "^0.16.6",
-    "typography-theme-bootstrap": "^0.16.7"
+    "typography-theme-bootstrap": "^0.16.7",
+    "snyk": "^1.437.2"
   },
   "author": "Andrew Wyatt <andrewrwyatt@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
