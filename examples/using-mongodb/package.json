@@ -4,17 +4,21 @@
   "description": "Gatsby example site using gatsby-source-mongodb",
   "author": "jhermans85@hotmail.com",
   "dependencies": {
-    "gatsby": "^1.9.119",
+    "gatsby": "^2.1.1",
     "gatsby-link": "^1.6.28",
     "gatsby-plugin-react-helmet": "^2.0.1",
     "gatsby-source-mongodb": "^1.5.11",
     "gatsby-transformer-remark": "^1.7.21",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "snyk": "^1.437.3"
   },
   "license": "MIT",
   "main": "n/a",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build"
-  }
+    "build": "gatsby build",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
