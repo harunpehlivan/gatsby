@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.52",
+    "gatsby": "^2.13.79",
     "gatsby-image": "^1.0.39",
     "gatsby-link": "^1.6.20",
     "gatsby-plugin-glamor": "^1.6.8",
@@ -13,7 +13,7 @@
     "gatsby-plugin-manifest": "^1.0.8",
     "gatsby-plugin-offline": "^1.0.9",
     "gatsby-plugin-sharp": "^1.6.8",
-    "gatsby-source-filesystem": "^1.5.2",
+    "gatsby-source-filesystem": "^2.1.16",
     "gatsby-transformer-json": "^1.0.8",
     "gatsby-transformer-sharp": "^1.6.8",
     "instagram-screen-scrape": "^2.0.0",
