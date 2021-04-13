@@ -32,7 +32,7 @@
     "gatsby-remark-prismjs": "latest",
     "gatsby-source-filesystem": "latest",
     "gatsby-transformer-javascript-frontmatter": "latest",
-    "gatsby-transformer-remark": "latest",
+    "gatsby-transformer-remark": "4.0.0",
     "moment": "^2.14.1",
     "normalize.css": "^7.0.0",
     "prop-types": "^15.5.8",
