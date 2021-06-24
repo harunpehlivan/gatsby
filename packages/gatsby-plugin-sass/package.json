@@ -10,7 +10,7 @@
     "babel-runtime": "^6.26.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "gatsby-1-config-css-modules": "^1.0.10",
-    "node-sass": "^4.5.2",
+    "node-sass": "^6.0.1",
     "sass-loader": "^4.1.1",
     "webpack": "^1.13.3"
   },
